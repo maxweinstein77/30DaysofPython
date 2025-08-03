@@ -7,4 +7,4 @@ This repo contains my code from the [30 Days of Python](https://github.com/Asabe
 - ✅ [Day 1](day_1/helloworld.py): Introduction
 - ✅ [Day 2](day_2/variables.py): Variables, Built-in Functions 
 - ✅ [Day 3](day_3/operators.py): Operators
-- ✅ [Day 1](day_4/strings.py): Strings
+- ✅ [Day 4](day_4/strings.py): Strings
