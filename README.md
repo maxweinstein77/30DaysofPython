@@ -9,3 +9,5 @@ This repo contains my code from the [30 Days of Python](https://github.com/Asabe
 - ✅ [Day 3](day_3/operators.py): Operators
 - ✅ [Day 4](day_4/strings.py): Strings
 - ✅ [Day 5](day_5/lists.py): Lists
+- ✅ [Day 6](day_6/tuples.py): Tuples
+- ✅ [Day 7](day_7/sets.py): Sets
