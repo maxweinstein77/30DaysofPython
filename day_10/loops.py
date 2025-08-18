@@ -330,8 +330,8 @@ populations = []
 for country in countries:
     populations.append((country["name"], country["population"]))
 
-sorted_populations = sorted(populations, key=lambda x: x[1], reverse=True)
+sorted_populations = sorted(populations, key = lambda x: x[1], reverse=True)
 top_10 = sorted_populations[:10]
 
 for country, pop in top_10:
-    print(country, pop)
+    print(country, pop)is
