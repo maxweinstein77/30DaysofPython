@@ -13,4 +13,5 @@ This repo contains my code for the [30 Days of Python](https://github.com/Asaben
 - ✅ [Day 7](day_7/sets.py): Sets
 - ✅ [Day 8](day_8/dictionaries.py): Dictionaries
 - ✅ [Day 9](day_9/conditionals.py): Conditionals
-- ✅ [Day 10](day_9/loops.py): Loops
+- ✅ [Day 10](day_10/loops.py): Loops
+- ✅ [Day 11](day_11/functions.py): Loops
