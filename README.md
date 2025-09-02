@@ -5,4 +5,4 @@ This repo contains my code for the [30 Days of Python](https://github.com/Asaben
 ## 📅 Progress
 
 - ✅ Day 1: [Introduction](day_1/helloworld.py)
-- ✅ Day 2: [Introduction](day_2/variables.py)
+- ✅ Day 2: [Variables](day_2/variables.py)
