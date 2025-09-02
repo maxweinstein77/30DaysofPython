@@ -4,4 +4,4 @@ This repo contains my code for the [30 Days of Python](https://github.com/Asaben
 
 ## 📅 Progress
 
-- ✅ [Day 1](day_1/helloworld.py): Introduction
+- ✅ Day 1: [Introduction](day_1/helloworld.py)
