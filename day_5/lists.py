@@ -6,16 +6,16 @@
 list = []
 
 # 2
-names = ["Max", "John", "James", "Cameron", "Nathan", "Noah", "Ben"]
+fruits = ["Apple", "Banana", "Orange", "Cantaloupe", "Kiwi", "Plum", "Orange"]
 
 # 3
-print(len(names))
+print(len(fruits))
 
 # 4
-print(names[::3])
+print(fruits[::3])
 
 # 5
-mixed_data_types = ["James", 20, 70, "Single", "USA"]
+mixed_data_types = ["Max", 20, 70, "Single", "USA"]
 
 # 6
 it_companies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"]
@@ -30,65 +30,60 @@ print(len(it_companies))
 print(it_companies[::3])
 
 # 10
-it_companies[0] = "IBM"
+it_companies[0] = "Meta"
 print(it_companies)
 
 # 11
-it_companies.append("NVIDIA")
-print(it_companies)
+it_companies.append("Instagram"))
 
 # 12
-it_companies.insert(4, "Meta")
-print(it_companies)
+it_companies.insert(4, "Aviato")
 
 # 13
-it_companies[1] = it_companies[1].upper()
-print(it_companies)
+it_companies[1] = it_companies[1].upper 
 
 # 14
 joined = "#; ".join(it_companies)
 print(joined)
 
 # 15
-print("IBM" in it_companies)
+print("Facebook" in it_companies)
 
 # 16
 it_companies.sort()
-print(it_companies)
 
 # 17
 it_companies.reverse()
-print(it_companies)
 
 # 18
-print(it_companies[0:3])
+print(it_companies[:3])
 
 # 19
 print(it_companies[-3:])
 
 # 20
-if len(it_companies) % 2 == 0:
-    mid1 = len(it_companies) // 2 - 1
-    mid2 = len(it_companies) // 2 + 1
-    middle = it_companies[mid1:mid2]
-    print(middle)
-elif len(it_companies) % 2 != 0:
-    middle = it_companies[len(it_companies) // 2]
-    print(middle)
+n = len(it_companies)
+
+if n % 2 == 0:
+    mid1, mid2 = n // 2 - 1, n // 2
+    mid = it_companies[mid1:mid2+1]
+else:
+    mid = it_companies[n // 2]
+    
+print(mid)
 
 # 21
 it_companies.pop(0)
 print(it_companies)
 
-# 22
-if len(it_companies) % 2 == 0:
-    mid1 = len(it_companies) // 2 - 1
-    mid2 = len(it_companies) // 2 + 1
-    middle = it_companies[mid1:mid2]
-    print(middle)
-elif len(it_companies) % 2 != 0:
-    middle = it_companies[len(it_companies) // 2]
-    print(middle)
+# 22 
+n = len(it_companies)
+
+if n % 2 == 0:
+    mid1, mid2 = n // 2 - 1, n // 2
+    del it_companies[mid1:mid2+1]
+else:
+    it_companies.pop(n // 2)
 
 # 23
 it_companies.pop(-1)
@@ -102,45 +97,46 @@ print(it_companies)
 del it_companies
 
 # 26
-front_end = ["HTML", "CSS", "JS", "React", "Redux"]
-back_end = ["Node", "Express", "MongoDB"]
+front_end = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+back_end = ['Node','Express', 'MongoDB']
 
-front_end.extend(back_end)
+joined = front_end + back_end
 
 # 27
-full_stack = front_end 
+full_stack = joined
 full_stack.insert(5, "Python")
 full_stack.insert(6, "SQL")
 print(full_stack)
 
 ## Level 2
-
-# 1
 ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
 
 ages.sort()
-print(ages[0])
-print(ages[-1])
-ages.append(19)
-ages.append(26)
+min = ages[0]
+max = ages[-1]
+print(min, max)
 
-if len(ages) % 2 == 0:
-    mid1 = len(ages) // 2 - 1
-    mid2 = len(ages) // 2
-    median = (ages[mid1] + ages[mid2]) / 2
-    print(median)
-elif len(ages) % 2 != 0:
-    median = ages[len(ages) // 2]
-    print(median)
+ages.insert(0, 19)
+ages.insert(-1, 26)
+
+n = len(it_companies)
+
+if n % 2 == 0:
+    mid1, mid2 = n // 2 - 1, n // 2
+    median = ages[mid1], ages[mid2]
+else:
+    median = ages[n // 2]
+print(median)
 
 average = sum(ages) / len(ages)
 print(average)
 
 range = ages[-1] - ages[0]
+print(range)
 
-min_minus_average = abs(ages[0] - average)
-max_minus_average = abs(ages[-1] - average)
-print(min_minus_average, max_minus_average)
+min_sub_avg = abs(ages[0] - average)
+max_sub_avg = abs(ages[-1] - average)
+print(min_sub_avg, max_sub_avg)
 
 countries = [
   'Afghanistan',
@@ -339,23 +335,25 @@ countries = [
 ]
 
 # 1
-if len(countries) % 2 == 0:
-    mid1 = len(countries) // 2 - 1
-    mid2 = len(countries) // 2
-    middle = countries[mid1:mid2 + 1]
-    print(middle)
-elif len(countries) % 2 != 0:
-    middle = countries[len(countries) // 2]
-    print(middle)
+n = len(countries) 
+
+if n % 2 == 0:
+    mid1, mid2 = n // 2 - 1, n // 2
+    mid = countries[mid1:mid2+1]
+else:
+    mid = countries[n // 2]
+
+print(mid)
 
 # 2
-if len(countries) % 2 == 0:
-    mid = len(countries) // 2
+n = len(countries)
+
+if n % 2 == 0:
+    mid = n // 2 
     list_one = countries[:mid]
     list_two = countries[mid:]
-    
-elif len(countries) % 2 != 0:
-    mid = countries[len(countries) // 2 + 1]
+else:
+    mid = n // 2 + 1
     list_one = countries[:mid]
     list_two = countries[mid:]
 
@@ -364,8 +362,8 @@ print(list_two)
 
 # 3
 countries = ['China', 'Russia', 'USA', 'Finland', 'Sweden', 'Norway', 'Denmark']
-first_item, second_item, third_item, *scandic = countries
-print(first_item)
-print(second_item)
-print(third_item)
+cn, ru, usa, *scandic = countries
+print(cn)
+print(ru)
+print(usa)
 print(scandic)
