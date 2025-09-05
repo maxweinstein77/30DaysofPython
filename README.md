@@ -8,3 +8,4 @@ This repo contains my code for the [30 Days of Python](https://github.com/Asaben
 - ✅ Day 2: [Variables](day_2/variables.py)
 - ✅ Day 3: [Operators](day_3/operators.py)
 - ✅ Day 4: [Strings](day_4/strings.py)
+- ✅ Day 5: [Lists](day_5/lists.py)
