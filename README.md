@@ -10,4 +10,4 @@ This repo contains my code for the [30 Days of Python](https://github.com/Asaben
 - ✅ Day 4: [Strings](day_4/strings.py)
 - ✅ Day 5: [Lists](day_5/lists.py)
 - ✅ Day 6: [Tuples](day_6/tuples.py)
-- ✅ Day 7: [Tuples](day_6/sets.py)
+- ✅ Day 7: [Sets](day_6/sets.py)
