@@ -1,43 +1,46 @@
-### Day 10
+### Day 10 
 
 ## Level 1
 
 # 1
 count = 0
+
 while count < 10:
     print(count)
     count = count + 1
-else:
-    print(count)
+
+print(count)
 
 # 2
 count = 10
+
 while count > 0:
     print(count)
     count = count - 1
-else:
-    print(count)
+
+print(count)
 
 # 3
-count = 1
+count = 0
+
 while count < 8:
     print(count * "#")
     count = count + 1
 
 # 4
-for row in range(8):
-    for col in range(8):
-        print("#", end=" ")
-    print()
+for row in range(4):
+    for column in range(2):
+        print("# " * 8)
 
- # 5
+# 5
 count = 0
+
 while count < 11:
     print(f"{count} x {count} = {count * count}")
     count = count + 1
 
 # 6
-languages = ['Python', 'Numpy','Pandas','Django', 'Flask'] 
+languages = ["Python", "Numpy", "Pandas", "Django", "Flask"]
 
 for language in languages:
     print(language)
@@ -54,16 +57,19 @@ for i in range(1, 101, 2):
 
 # 1
 sum = 0
+
 for i in range(0, 101):
     sum = sum + i
-print(f"The sum of all the numbers is {sum}.")
+
+print(f"The sum of all numbers is {sum}.")
 
 # 2
 even_sum = 0
+odd_sum = 0
+
 for i in range(0, 101, 2):
     even_sum = even_sum + i
 
-odd_sum = 0
 for i in range(1, 101, 2):
     odd_sum = odd_sum + i
 
@@ -277,7 +283,8 @@ for country in countries:
 print(land_countries)
 
 # 2
-fruits = ['banana', 'orange', 'mango', 'lemon'] 
+
+fruits = ["banana", "orange", "mango", "lemon"]
 
 reversed_fruits = []
 
@@ -287,7 +294,7 @@ for i in range(len(fruits) - 1, -1, -1):
 print(reversed_fruits)
 
 # 3
-from countries_data import countries 
+from countries_data import countries
 
 total_languages = []
 
@@ -295,14 +302,8 @@ for country in countries:
     for language in country["languages"]:
         total_languages.append(language)
 
-print(len(total_languages))
-
 unique_languages = set(total_languages)
 print("Total number of languages:", len(unique_languages))
-
-
-
-from countries_data import countries
 
 counts = {}
 
@@ -312,22 +313,20 @@ for country in countries:
             counts[language] += 1
         else:
             counts[language] = 1
-            
+
 items = []
+
 for language, number in counts.items():
-    items.append((number, language))
+    items.append([number, language])
 
-items.sort(reverse=True)
+items.sort(reverse = True)
 
-top_10 = items[:10]
+top_10_languages = items[:10]
 
-print("Top 10 languages:")
-for count, language in top_10:
+print("Top 10 Languages:")
+
+for count, language in top_10_languages:
     print(language, ":", count)
-
-
-
-from countries_data import countries 
 
 populations = []
 
@@ -336,10 +335,10 @@ for country in countries:
     population = country["population"]
     populations.append([population, name])
 
-populations.sort(reverse=True)
+populations.sort(reverse = True)
 
-top_10 = populations[:10]
+top_10_populations = populations[:10]
+print("Top 10 Populations:")
 
-print("Top 10 Populated Countries:")
-for population, name in top_10:
-    print(name, ":", population)
+for population, country in top_10_populations:
+    print(country, ":", population)
